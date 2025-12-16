@@ -1,10 +1,9 @@
 ---
-
 title: "Start project"
 date: 2025-12-13 00:00:00 +0800
 categories: [asp.net]
 tags: [asp.net]
----------------
+---
 
 ## List types of projects
 
