@@ -61,6 +61,7 @@ app.Run();
 - This is used for configurations
 - I need to put everything that shouldn't be harcoded on the code
 - This file is used for production
+
 ```json
 
 {
@@ -132,7 +133,7 @@ app.Run();
 ### On command
 
 ```
-.net build
+dotnet build
 ```
 
 ### Shortcut
