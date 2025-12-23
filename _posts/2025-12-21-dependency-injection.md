@@ -110,3 +110,7 @@ public MyService(ILogger logger) {
    - When a new HTTP request comes in, IServiceProvider will resolve, construct, and inject MyLogger
    - If there is any other service using MyLogger, it will use the same dependency.
    - However, If another new HTTP arrives, the service container will also provide the same instance.
+
+
+#### Reference
+_Please click [here](https://github.com/shinjuno123/asp-net-tutorial/tree/280a3526ccac987fc235382b3886594067a79376) to see the entire code base_
