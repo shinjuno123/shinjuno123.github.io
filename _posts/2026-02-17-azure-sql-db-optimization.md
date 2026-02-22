@@ -100,7 +100,7 @@ If each order record is about 2KB, sending 100k orders is 200Mb of data.
 
 ### 2. Reducing "Memory Pressure" on the API
 
-To send 100k rows, your Backend (Node.js, c$, Java, etc.) has to hold all 100k objects in its RAM before sending them to the frontend.
+To send 100k rows, your Backend (Node.js, c#, Java, etc.) has to hold all 100k objects in its RAM before sending them to the frontend.
 - **The risk:** Even with a smaller group of 15-20 users, if everyone requests 100k orders at the same time, the API server has to allocte a massive amount of RAM to stringify those objects into JSON. This causes CPU spikes and "Memory Pressure". If the server hits its limit, it could crash or start dropping other requests.
 - **The benefit:** `OFFSET` keeps the backend "lean.". The API only handles a handful of records at a time, keeping memory usage flat and the server stable, regardless of how much data is actually in the database. In my case, I wanted to lower down the cost of cloud services as best as I could. So I have selected 0.25 vCPU and 0.5 GB memory. I needed to ensure that each request takes up the memory as low as possible. 
 
