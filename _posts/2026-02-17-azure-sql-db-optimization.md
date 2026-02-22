@@ -18,8 +18,8 @@ I have migrated the following amount of data from 3rd party API and spread sheet
 
 Please see the endpoints below. The app has 2 very important endpoints that are related with this post.
 
-- /orders?location=[US|CA]&from=yyyy-mm-dd&to=yyyy-mm-dd&page=number&limit=number&fulfillmentStatus=[all|unfulfilled|fulfilled]&sort=[shipDate|orderNumber|orderDate|storeName]&order=desc
-- /orders/summary?location=[US|CA]&from=yyyy-mm-dd&to=yyyy-mm-dd
+- **/orders?location=US&from=2026-01-01&to=2026-02-21&page=1&limit=50&fulfillmentStatus=unfulfilled&sort=shipDate&order=desc**
+- **/orders/summary?location=CA&from=2026-01-01&to=2026-02-21**
 
 In this post, we are going to see /orders route in details with the optimization process
 
