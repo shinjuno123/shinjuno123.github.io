@@ -1,6 +1,6 @@
 ---
 title: "From 5–Minute Timeouts to 1–Second Responses: Optimizing Azure SQL on a Budget"
-data: 2026-12-17 23:00:00 +0800
+data: 2026-02-21 23:00:00 +0800
 categories: [Projects, Fulfillment Server]
 tags: ["Azure SQL", "Query Optimization", "Cloud Architecture"]
 ---
